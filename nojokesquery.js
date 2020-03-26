@@ -1,5 +1,5 @@
         //fetch datanya dari api github saya
-        fetch('https://api.github.com/users/chrysnaardy123').then(function (response) {
+        fetch('https://api.github.com/users/YOUR_GITHUB_NAME').then(function (response) {
             return response.json();
         }).then(function (data) {
             //kita simpan respon nya ke fungsi data lalu kita buat fungsi appendData(data)
