@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Fetch Dan Display Pure Js+Html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./nojokesquery.js"></script>
+</head>
+<style>
+    img {
+        height: 200px;
+        width: 200px;
+    }
+    body{
+        background-color: #2b2b2b;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    #datamap{
+        border:solid 5px #2b2b2b;
+        box-shadow: 2px 2px 6px 9px rgba(0,0,0,0.75);
+        margin-top: 50px;
+    }
+    #loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  background-image: url("./load.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content{
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hideit{
+    display: none;
+}
+
+</style>
+
+<body>
+    <div class="content hideit">
+    <center>
+        <h1 style="border-bottom:solid 2px white;">Basic Fetch Data Biodata Github</h1>
+        <h2>Dapat di run dengan node js juga,cukup jalankan node server.js lalu server berjalan pada port 8080</h2>
+        <h1>Response yang di terima</h1>
+        <div style="border: 2px solid yellow;margin-left: 20%;margin-right: 20%;">
+        <p id="jsondata" style="padding: 50px;"></p>
+    </div>
+        
+        <div id="datamap" style="margin-left: 20%;margin-right: 20%;">
+            <h1>Hasil Setelah Fungsi Javascript</h1>
+        </div>
+    </center>
+</div>
+<div id="loading"></div>
+</body>
+
+</html>
